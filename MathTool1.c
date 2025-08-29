@@ -36,6 +36,7 @@ main(int argc, char *argv[])
         while (ch != 2) {
                 if (rank == 0) {
                         printf("Enter N: ");
+						fflush(stdout);
                         scanf("%d", &n);
                         getchar();
 
@@ -44,6 +45,7 @@ main(int argc, char *argv[])
                         /* read whole array */
                         for (i = 0; i < n; i++) {
                                 printf("t[%d]: ", i);
+								fflush(stdout);
                                 scanf("%d", &t[i]);
                         }
                         getchar();
